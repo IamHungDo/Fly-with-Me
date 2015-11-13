@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		221DECA6E8EB1DC087C25925 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7983C971F956CF1D4FD01413 /* libPods.a */; };
+		9EEA379E1BEE6F60008B9799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA379D1BEE6F60008B9799 /* main.m */; };
+		9EEA37A11BEE6F60008B9799 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA37A01BEE6F60008B9799 /* AppDelegate.m */; };
+		9EEA37AA1BEE6F60008B9799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA37A81BEE6F60008B9799 /* Main.storyboard */; };
+		9EEA37AC1BEE6F60008B9799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA37AB1BEE6F60008B9799 /* Assets.xcassets */; };
+		9EEA37AF1BEE6F60008B9799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA37AD1BEE6F60008B9799 /* LaunchScreen.storyboard */; };
+		9EEA37BA1BEE6F60008B9799 /* FlyWithMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA37B91BEE6F60008B9799 /* FlyWithMeTests.m */; };
+		9EEA37C51BEE6F60008B9799 /* FlyWithMeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA37C41BEE6F60008B9799 /* FlyWithMeUITests.m */; };
+		9EEA37D71BEE8F51008B9799 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA37D31BEE8F51008B9799 /* Fabric.framework */; };
+		9EEA37D81BEE8F51008B9799 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA37D41BEE8F51008B9799 /* TwitterKit.framework */; };
+		9EEA37D91BEE8F51008B9799 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9EEA37D51BEE8F51008B9799 /* TwitterKitResources.bundle */; };
+		9EEA37DA1BEE8F51008B9799 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA37D61BEE8F51008B9799 /* TwitterCore.framework */; };
+		B10941A21BEEAE29006C8AC7 /* SNStartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B10941A11BEEAE29006C8AC7 /* SNStartVC.m */; };
+		B10941A41BEEB23F006C8AC7 /* logo_homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B10941A31BEEB23F006C8AC7 /* logo_homescreen.png */; };
+		B10941A71BEEB603006C8AC7 /* SNProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B10941A61BEEB603006C8AC7 /* SNProfileVC.m */; };
+		B10941AA1BEEC23E006C8AC7 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B10941A91BEEC23E006C8AC7 /* MBProgressHUD.m */; };
+		B10941AD1BEECA53006C8AC7 /* SNUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = B10941AC1BEECA53006C8AC7 /* SNUserProfile.m */; };
+		B10941AF1BEEF941006C8AC7 /* twitter_login.png in Resources */ = {isa = PBXBuildFile; fileRef = B10941AE1BEEF941006C8AC7 /* twitter_login.png */; };
+		B1F42A061BEF1E8200F23493 /* UIView+AutoLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A051BEF1E8200F23493 /* UIView+AutoLayoutView.m */; };
+		B1F42A091BEF254600F23493 /* SNSearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A081BEF254600F23493 /* SNSearchResultsVC.m */; };
+		B1F42A0C1BEF27B600F23493 /* SNDashboardTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A0B1BEF27B600F23493 /* SNDashboardTVCell.m */; };
+		B1F42A0E1BEF363F00F23493 /* taxfree.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A0D1BEF363F00F23493 /* taxfree.png */; };
+		B1F42A121BEF399100F23493 /* meal.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A0F1BEF399100F23493 /* meal.png */; };
+		B1F42A131BEF399100F23493 /* headphone.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A101BEF399100F23493 /* headphone.png */; };
+		B1F42A141BEF399100F23493 /* drink.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A111BEF399100F23493 /* drink.png */; };
+		B1F42A171BEF461000F23493 /* NSFlightInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A161BEF461000F23493 /* NSFlightInfo.m */; };
+		B1F42A1A1BEF466200F23493 /* SNFlightInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A191BEF466200F23493 /* SNFlightInfo.m */; };
+		B1F42A1D1BEF60F900F23493 /* SNPersonaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A1C1BEF60F900F23493 /* SNPersonaVC.m */; };
+		B1F42A1F1BEF665E00F23493 /* Delete-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A1E1BEF665E00F23493 /* Delete-32.png */; };
+		B1F42A221BEF676700F23493 /* NMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A211BEF676700F23493 /* NMRangeSlider.m */; };
+		B1F42A241BEF67DF00F23493 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A231BEF67DF00F23493 /* exit.png */; };
+		B1F42A261BEF682E00F23493 /* adventure_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A251BEF682E00F23493 /* adventure_icon.png */; };
+		B1F42A291BEF6E4B00F23493 /* SNTravelTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A281BEF6E4B00F23493 /* SNTravelTVCell.m */; };
+		B1F42A2C1BEF6F3C00F23493 /* SNTravelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F42A2B1BEF6F3C00F23493 /* SNTravelVC.m */; };
+		B1F42A2E1BEF707200F23493 /* Sahara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A2D1BEF707200F23493 /* Sahara.jpg */; };
+		B1F42A351BEF733800F23493 /* zoo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A2F1BEF733800F23493 /* zoo.jpg */; };
+		B1F42A361BEF733800F23493 /* waterpark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A301BEF733800F23493 /* waterpark.jpg */; };
+		B1F42A371BEF733800F23493 /* museum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A311BEF733800F23493 /* museum.jpg */; };
+		B1F42A381BEF733800F23493 /* hawaii.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A321BEF733800F23493 /* hawaii.jpeg */; };
+		B1F42A391BEF733800F23493 /* CityTour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A331BEF733800F23493 /* CityTour.jpg */; };
+		B1F42A3A1BEF733800F23493 /* NightTour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A341BEF733800F23493 /* NightTour.jpg */; };
+		B1F42A3E1BEF751C00F23493 /* adventure.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A3B1BEF751C00F23493 /* adventure.png */; };
+		B1F42A3F1BEF751C00F23493 /* next_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A3C1BEF751C00F23493 /* next_btn.png */; };
+		B1F42A401BEF751C00F23493 /* map_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A3D1BEF751C00F23493 /* map_bg.png */; };
+		B1F42A421BEF7B6000F23493 /* love_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A411BEF7B6000F23493 /* love_icon.png */; };
+		B1F42A441BEF8E2300F23493 /* Adventurer.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A431BEF8E2300F23493 /* Adventurer.png */; };
+		B1F42A461BEFB1BC00F23493 /* loved.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A451BEFB1BC00F23493 /* loved.png */; };
+		B1F42A481BEFBBA600F23493 /* map_bg (1).png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A471BEFBBA600F23493 /* map_bg (1).png */; };
+		B1F42A4A1BEFBCBF00F23493 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F42A491BEFBCBF00F23493 /* map.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EEA37B61BEE6F60008B9799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EEA37911BEE6F60008B9799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EEA37981BEE6F60008B9799;
+			remoteInfo = FlyWithMe;
+		};
+		9EEA37C11BEE6F60008B9799 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EEA37911BEE6F60008B9799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EEA37981BEE6F60008B9799;
+			remoteInfo = FlyWithMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0216821F13BB7A41698EF067 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7983C971F956CF1D4FD01413 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA37991BEE6F60008B9799 /* FlyWithMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyWithMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA379D1BEE6F60008B9799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EEA379F1BEE6F60008B9799 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9EEA37A01BEE6F60008B9799 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9EEA37A91BEE6F60008B9799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EEA37AB1BEE6F60008B9799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EEA37AE1BEE6F60008B9799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EEA37B01BEE6F60008B9799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA37B51BEE6F60008B9799 /* FlyWithMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyWithMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA37B91BEE6F60008B9799 /* FlyWithMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyWithMeTests.m; sourceTree = "<group>"; };
+		9EEA37BB1BEE6F60008B9799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA37C01BEE6F60008B9799 /* FlyWithMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlyWithMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEA37C41BEE6F60008B9799 /* FlyWithMeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyWithMeUITests.m; sourceTree = "<group>"; };
+		9EEA37C61BEE6F60008B9799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA37D31BEE8F51008B9799 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		9EEA37D41BEE8F51008B9799 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		9EEA37D51BEE8F51008B9799 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		9EEA37D61BEE8F51008B9799 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
+		9F96C8A48EA2D999473A5E22 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B10941A01BEEAE29006C8AC7 /* SNStartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNStartVC.h; sourceTree = "<group>"; };
+		B10941A11BEEAE29006C8AC7 /* SNStartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNStartVC.m; sourceTree = "<group>"; };
+		B10941A31BEEB23F006C8AC7 /* logo_homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_homescreen.png; sourceTree = "<group>"; };
+		B10941A51BEEB603006C8AC7 /* SNProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNProfileVC.h; path = ../SNProfileVC.h; sourceTree = "<group>"; };
+		B10941A61BEEB603006C8AC7 /* SNProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNProfileVC.m; path = ../SNProfileVC.m; sourceTree = "<group>"; };
+		B10941A81BEEC23E006C8AC7 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
+		B10941A91BEEC23E006C8AC7 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
+		B10941AB1BEECA53006C8AC7 /* SNUserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUserProfile.h; sourceTree = "<group>"; };
+		B10941AC1BEECA53006C8AC7 /* SNUserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNUserProfile.m; sourceTree = "<group>"; };
+		B10941AE1BEEF941006C8AC7 /* twitter_login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_login.png; sourceTree = "<group>"; };
+		B1F42A041BEF1E8200F23493 /* UIView+AutoLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayoutView.h"; sourceTree = "<group>"; };
+		B1F42A051BEF1E8200F23493 /* UIView+AutoLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayoutView.m"; sourceTree = "<group>"; };
+		B1F42A071BEF254600F23493 /* SNSearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SNSearchResultsVC.h; path = ../SNSearchResultsVC.h; sourceTree = "<group>"; };
+		B1F42A081BEF254600F23493 /* SNSearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SNSearchResultsVC.m; path = ../SNSearchResultsVC.m; sourceTree = "<group>"; };
+		B1F42A0A1BEF27B600F23493 /* SNDashboardTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDashboardTVCell.h; sourceTree = "<group>"; };
+		B1F42A0B1BEF27B600F23493 /* SNDashboardTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDashboardTVCell.m; sourceTree = "<group>"; };
+		B1F42A0D1BEF363F00F23493 /* taxfree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taxfree.png; sourceTree = "<group>"; };
+		B1F42A0F1BEF399100F23493 /* meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal.png; sourceTree = "<group>"; };
+		B1F42A101BEF399100F23493 /* headphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphone.png; sourceTree = "<group>"; };
+		B1F42A111BEF399100F23493 /* drink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drink.png; sourceTree = "<group>"; };
+		B1F42A151BEF461000F23493 /* NSFlightInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFlightInfo.h; sourceTree = "<group>"; };
+		B1F42A161BEF461000F23493 /* NSFlightInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFlightInfo.m; sourceTree = "<group>"; };
+		B1F42A181BEF466200F23493 /* SNFlightInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNFlightInfo.h; sourceTree = "<group>"; };
+		B1F42A191BEF466200F23493 /* SNFlightInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFlightInfo.m; sourceTree = "<group>"; };
+		B1F42A1B1BEF60F900F23493 /* SNPersonaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPersonaVC.h; sourceTree = "<group>"; };
+		B1F42A1C1BEF60F900F23493 /* SNPersonaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPersonaVC.m; sourceTree = "<group>"; };
+		B1F42A1E1BEF665E00F23493 /* Delete-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete-32.png"; sourceTree = "<group>"; };
+		B1F42A201BEF676700F23493 /* NMRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRangeSlider.h; sourceTree = "<group>"; };
+		B1F42A211BEF676700F23493 /* NMRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRangeSlider.m; sourceTree = "<group>"; };
+		B1F42A231BEF67DF00F23493 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		B1F42A251BEF682E00F23493 /* adventure_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adventure_icon.png; sourceTree = "<group>"; };
+		B1F42A271BEF6E4B00F23493 /* SNTravelTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTravelTVCell.h; sourceTree = "<group>"; };
+		B1F42A281BEF6E4B00F23493 /* SNTravelTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNTravelTVCell.m; sourceTree = "<group>"; };
+		B1F42A2A1BEF6F3C00F23493 /* SNTravelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNTravelVC.h; sourceTree = "<group>"; };
+		B1F42A2B1BEF6F3C00F23493 /* SNTravelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNTravelVC.m; sourceTree = "<group>"; };
+		B1F42A2D1BEF707200F23493 /* Sahara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sahara.jpg; sourceTree = "<group>"; };
+		B1F42A2F1BEF733800F23493 /* zoo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zoo.jpg; sourceTree = "<group>"; };
+		B1F42A301BEF733800F23493 /* waterpark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = waterpark.jpg; sourceTree = "<group>"; };
+		B1F42A311BEF733800F23493 /* museum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museum.jpg; sourceTree = "<group>"; };
+		B1F42A321BEF733800F23493 /* hawaii.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hawaii.jpeg; sourceTree = "<group>"; };
+		B1F42A331BEF733800F23493 /* CityTour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CityTour.jpg; sourceTree = "<group>"; };
+		B1F42A341BEF733800F23493 /* NightTour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NightTour.jpg; sourceTree = "<group>"; };
+		B1F42A3B1BEF751C00F23493 /* adventure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adventure.png; sourceTree = "<group>"; };
+		B1F42A3C1BEF751C00F23493 /* next_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next_btn.png; sourceTree = "<group>"; };
+		B1F42A3D1BEF751C00F23493 /* map_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_bg.png; sourceTree = "<group>"; };
+		B1F42A411BEF7B6000F23493 /* love_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = love_icon.png; sourceTree = "<group>"; };
+		B1F42A431BEF8E2300F23493 /* Adventurer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adventurer.png; sourceTree = "<group>"; };
+		B1F42A451BEFB1BC00F23493 /* loved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loved.png; sourceTree = "<group>"; };
+		B1F42A471BEFBBA600F23493 /* map_bg (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_bg (1).png"; sourceTree = "<group>"; };
+		B1F42A491BEFBCBF00F23493 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EEA37961BEE6F60008B9799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA37D71BEE8F51008B9799 /* Fabric.framework in Frameworks */,
+				9EEA37DA1BEE8F51008B9799 /* TwitterCore.framework in Frameworks */,
+				9EEA37D81BEE8F51008B9799 /* TwitterKit.framework in Frameworks */,
+				221DECA6E8EB1DC087C25925 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37B21BEE6F60008B9799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37BD1BEE6F60008B9799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C5ACE02ED5AF521007F4BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7983C971F956CF1D4FD01413 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EEA37901BEE6F60008B9799 = {
+			isa = PBXGroup;
+			children = (
+				9EEA379B1BEE6F60008B9799 /* FlyWithMe */,
+				9EEA37B81BEE6F60008B9799 /* FlyWithMeTests */,
+				9EEA37C31BEE6F60008B9799 /* FlyWithMeUITests */,
+				9EEA379A1BEE6F60008B9799 /* Products */,
+				E1BEC081FC79874BDDECA2BB /* Pods */,
+				19C5ACE02ED5AF521007F4BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9EEA379A1BEE6F60008B9799 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA37991BEE6F60008B9799 /* FlyWithMe.app */,
+				9EEA37B51BEE6F60008B9799 /* FlyWithMeTests.xctest */,
+				9EEA37C01BEE6F60008B9799 /* FlyWithMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EEA379B1BEE6F60008B9799 /* FlyWithMe */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA37D31BEE8F51008B9799 /* Fabric.framework */,
+				9EEA37D41BEE8F51008B9799 /* TwitterKit.framework */,
+				9EEA37D51BEE8F51008B9799 /* TwitterKitResources.bundle */,
+				9EEA37D61BEE8F51008B9799 /* TwitterCore.framework */,
+				9EEA379F1BEE6F60008B9799 /* AppDelegate.h */,
+				9EEA37A01BEE6F60008B9799 /* AppDelegate.m */,
+				B10941A01BEEAE29006C8AC7 /* SNStartVC.h */,
+				B10941A11BEEAE29006C8AC7 /* SNStartVC.m */,
+				B10941A51BEEB603006C8AC7 /* SNProfileVC.h */,
+				B10941A61BEEB603006C8AC7 /* SNProfileVC.m */,
+				B1F42A071BEF254600F23493 /* SNSearchResultsVC.h */,
+				B1F42A081BEF254600F23493 /* SNSearchResultsVC.m */,
+				B1F42A1B1BEF60F900F23493 /* SNPersonaVC.h */,
+				B1F42A1C1BEF60F900F23493 /* SNPersonaVC.m */,
+				B1F42A201BEF676700F23493 /* NMRangeSlider.h */,
+				B1F42A211BEF676700F23493 /* NMRangeSlider.m */,
+				B1F42A041BEF1E8200F23493 /* UIView+AutoLayoutView.h */,
+				B1F42A051BEF1E8200F23493 /* UIView+AutoLayoutView.m */,
+				B1F42A0A1BEF27B600F23493 /* SNDashboardTVCell.h */,
+				B1F42A0B1BEF27B600F23493 /* SNDashboardTVCell.m */,
+				B10941A81BEEC23E006C8AC7 /* MBProgressHUD.h */,
+				B10941A91BEEC23E006C8AC7 /* MBProgressHUD.m */,
+				B1F42A271BEF6E4B00F23493 /* SNTravelTVCell.h */,
+				B1F42A281BEF6E4B00F23493 /* SNTravelTVCell.m */,
+				B1F42A2A1BEF6F3C00F23493 /* SNTravelVC.h */,
+				B1F42A2B1BEF6F3C00F23493 /* SNTravelVC.m */,
+				9EEA37A81BEE6F60008B9799 /* Main.storyboard */,
+				9EEA37AB1BEE6F60008B9799 /* Assets.xcassets */,
+				9EEA37AD1BEE6F60008B9799 /* LaunchScreen.storyboard */,
+				9EEA37B01BEE6F60008B9799 /* Info.plist */,
+				9EEA379C1BEE6F60008B9799 /* Supporting Files */,
+				B10941AB1BEECA53006C8AC7 /* SNUserProfile.h */,
+				B10941AC1BEECA53006C8AC7 /* SNUserProfile.m */,
+				B1F42A151BEF461000F23493 /* NSFlightInfo.h */,
+				B1F42A161BEF461000F23493 /* NSFlightInfo.m */,
+				B1F42A181BEF466200F23493 /* SNFlightInfo.h */,
+				B1F42A191BEF466200F23493 /* SNFlightInfo.m */,
+			);
+			path = FlyWithMe;
+			sourceTree = "<group>";
+		};
+		9EEA379C1BEE6F60008B9799 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1F42A491BEFBCBF00F23493 /* map.png */,
+				B1F42A471BEFBBA600F23493 /* map_bg (1).png */,
+				B1F42A451BEFB1BC00F23493 /* loved.png */,
+				B1F42A431BEF8E2300F23493 /* Adventurer.png */,
+				B1F42A411BEF7B6000F23493 /* love_icon.png */,
+				B1F42A3B1BEF751C00F23493 /* adventure.png */,
+				B1F42A3C1BEF751C00F23493 /* next_btn.png */,
+				B1F42A3D1BEF751C00F23493 /* map_bg.png */,
+				B1F42A2F1BEF733800F23493 /* zoo.jpg */,
+				B1F42A301BEF733800F23493 /* waterpark.jpg */,
+				B1F42A311BEF733800F23493 /* museum.jpg */,
+				B1F42A321BEF733800F23493 /* hawaii.jpeg */,
+				B1F42A331BEF733800F23493 /* CityTour.jpg */,
+				B1F42A341BEF733800F23493 /* NightTour.jpg */,
+				B1F42A2D1BEF707200F23493 /* Sahara.jpg */,
+				B1F42A251BEF682E00F23493 /* adventure_icon.png */,
+				B1F42A231BEF67DF00F23493 /* exit.png */,
+				B1F42A1E1BEF665E00F23493 /* Delete-32.png */,
+				B1F42A0F1BEF399100F23493 /* meal.png */,
+				B1F42A101BEF399100F23493 /* headphone.png */,
+				B1F42A111BEF399100F23493 /* drink.png */,
+				B1F42A0D1BEF363F00F23493 /* taxfree.png */,
+				B10941AE1BEEF941006C8AC7 /* twitter_login.png */,
+				B10941A31BEEB23F006C8AC7 /* logo_homescreen.png */,
+				9EEA379D1BEE6F60008B9799 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EEA37B81BEE6F60008B9799 /* FlyWithMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA37B91BEE6F60008B9799 /* FlyWithMeTests.m */,
+				9EEA37BB1BEE6F60008B9799 /* Info.plist */,
+			);
+			path = FlyWithMeTests;
+			sourceTree = "<group>";
+		};
+		9EEA37C31BEE6F60008B9799 /* FlyWithMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EEA37C41BEE6F60008B9799 /* FlyWithMeUITests.m */,
+				9EEA37C61BEE6F60008B9799 /* Info.plist */,
+			);
+			path = FlyWithMeUITests;
+			sourceTree = "<group>";
+		};
+		E1BEC081FC79874BDDECA2BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F96C8A48EA2D999473A5E22 /* Pods.debug.xcconfig */,
+				0216821F13BB7A41698EF067 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EEA37981BEE6F60008B9799 /* FlyWithMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEA37C91BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMe" */;
+			buildPhases = (
+				378AA41ED96C4C98AB98F426 /* Check Pods Manifest.lock */,
+				9EEA37951BEE6F60008B9799 /* Sources */,
+				9EEA37961BEE6F60008B9799 /* Frameworks */,
+				9EEA37971BEE6F60008B9799 /* Resources */,
+				9EEA37D21BEE8E9B008B9799 /* ShellScript */,
+				DC28999BD60632FAA81E45E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlyWithMe;
+			productName = FlyWithMe;
+			productReference = 9EEA37991BEE6F60008B9799 /* FlyWithMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EEA37B41BEE6F60008B9799 /* FlyWithMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEA37CC1BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMeTests" */;
+			buildPhases = (
+				9EEA37B11BEE6F60008B9799 /* Sources */,
+				9EEA37B21BEE6F60008B9799 /* Frameworks */,
+				9EEA37B31BEE6F60008B9799 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EEA37B71BEE6F60008B9799 /* PBXTargetDependency */,
+			);
+			name = FlyWithMeTests;
+			productName = FlyWithMeTests;
+			productReference = 9EEA37B51BEE6F60008B9799 /* FlyWithMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EEA37BF1BEE6F60008B9799 /* FlyWithMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEA37CF1BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMeUITests" */;
+			buildPhases = (
+				9EEA37BC1BEE6F60008B9799 /* Sources */,
+				9EEA37BD1BEE6F60008B9799 /* Frameworks */,
+				9EEA37BE1BEE6F60008B9799 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EEA37C21BEE6F60008B9799 /* PBXTargetDependency */,
+			);
+			name = FlyWithMeUITests;
+			productName = FlyWithMeUITests;
+			productReference = 9EEA37C01BEE6F60008B9799 /* FlyWithMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EEA37911BEE6F60008B9799 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Hung Do";
+				TargetAttributes = {
+					9EEA37981BEE6F60008B9799 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UHVXBZPQAT;
+					};
+					9EEA37B41BEE6F60008B9799 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 9EEA37981BEE6F60008B9799;
+					};
+					9EEA37BF1BEE6F60008B9799 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 9EEA37981BEE6F60008B9799;
+					};
+				};
+			};
+			buildConfigurationList = 9EEA37941BEE6F60008B9799 /* Build configuration list for PBXProject "FlyWithMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EEA37901BEE6F60008B9799;
+			productRefGroup = 9EEA379A1BEE6F60008B9799 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EEA37981BEE6F60008B9799 /* FlyWithMe */,
+				9EEA37B41BEE6F60008B9799 /* FlyWithMeTests */,
+				9EEA37BF1BEE6F60008B9799 /* FlyWithMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EEA37971BEE6F60008B9799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F42A3A1BEF733800F23493 /* NightTour.jpg in Resources */,
+				B1F42A351BEF733800F23493 /* zoo.jpg in Resources */,
+				9EEA37D91BEE8F51008B9799 /* TwitterKitResources.bundle in Resources */,
+				B1F42A441BEF8E2300F23493 /* Adventurer.png in Resources */,
+				B1F42A4A1BEFBCBF00F23493 /* map.png in Resources */,
+				B1F42A3F1BEF751C00F23493 /* next_btn.png in Resources */,
+				9EEA37AF1BEE6F60008B9799 /* LaunchScreen.storyboard in Resources */,
+				B1F42A481BEFBBA600F23493 /* map_bg (1).png in Resources */,
+				B1F42A371BEF733800F23493 /* museum.jpg in Resources */,
+				B1F42A121BEF399100F23493 /* meal.png in Resources */,
+				B1F42A131BEF399100F23493 /* headphone.png in Resources */,
+				B1F42A0E1BEF363F00F23493 /* taxfree.png in Resources */,
+				B1F42A2E1BEF707200F23493 /* Sahara.jpg in Resources */,
+				B1F42A241BEF67DF00F23493 /* exit.png in Resources */,
+				B10941A41BEEB23F006C8AC7 /* logo_homescreen.png in Resources */,
+				B1F42A261BEF682E00F23493 /* adventure_icon.png in Resources */,
+				9EEA37AC1BEE6F60008B9799 /* Assets.xcassets in Resources */,
+				B1F42A421BEF7B6000F23493 /* love_icon.png in Resources */,
+				B1F42A3E1BEF751C00F23493 /* adventure.png in Resources */,
+				9EEA37AA1BEE6F60008B9799 /* Main.storyboard in Resources */,
+				B1F42A401BEF751C00F23493 /* map_bg.png in Resources */,
+				B1F42A1F1BEF665E00F23493 /* Delete-32.png in Resources */,
+				B1F42A381BEF733800F23493 /* hawaii.jpeg in Resources */,
+				B1F42A391BEF733800F23493 /* CityTour.jpg in Resources */,
+				B1F42A361BEF733800F23493 /* waterpark.jpg in Resources */,
+				B1F42A141BEF399100F23493 /* drink.png in Resources */,
+				B1F42A461BEFB1BC00F23493 /* loved.png in Resources */,
+				B10941AF1BEEF941006C8AC7 /* twitter_login.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37B31BEE6F60008B9799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37BE1BEE6F60008B9799 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		378AA41ED96C4C98AB98F426 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9EEA37D21BEE8E9B008B9799 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 317cc45c80ad3b7d8d3c6ac55c0d8fa47fb6f6fd aa435843d333043402a4c58cf399c8d2a2b0b9e3db3e8a4de1aee3a79d73c866";
+		};
+		DC28999BD60632FAA81E45E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EEA37951BEE6F60008B9799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F42A171BEF461000F23493 /* NSFlightInfo.m in Sources */,
+				B1F42A091BEF254600F23493 /* SNSearchResultsVC.m in Sources */,
+				B1F42A291BEF6E4B00F23493 /* SNTravelTVCell.m in Sources */,
+				9EEA37A11BEE6F60008B9799 /* AppDelegate.m in Sources */,
+				9EEA379E1BEE6F60008B9799 /* main.m in Sources */,
+				B1F42A1A1BEF466200F23493 /* SNFlightInfo.m in Sources */,
+				B10941AA1BEEC23E006C8AC7 /* MBProgressHUD.m in Sources */,
+				B1F42A2C1BEF6F3C00F23493 /* SNTravelVC.m in Sources */,
+				B1F42A1D1BEF60F900F23493 /* SNPersonaVC.m in Sources */,
+				B10941AD1BEECA53006C8AC7 /* SNUserProfile.m in Sources */,
+				B10941A21BEEAE29006C8AC7 /* SNStartVC.m in Sources */,
+				B1F42A061BEF1E8200F23493 /* UIView+AutoLayoutView.m in Sources */,
+				B1F42A0C1BEF27B600F23493 /* SNDashboardTVCell.m in Sources */,
+				B10941A71BEEB603006C8AC7 /* SNProfileVC.m in Sources */,
+				B1F42A221BEF676700F23493 /* NMRangeSlider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37B11BEE6F60008B9799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA37BA1BEE6F60008B9799 /* FlyWithMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EEA37BC1BEE6F60008B9799 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEA37C51BEE6F60008B9799 /* FlyWithMeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EEA37B71BEE6F60008B9799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EEA37981BEE6F60008B9799 /* FlyWithMe */;
+			targetProxy = 9EEA37B61BEE6F60008B9799 /* PBXContainerItemProxy */;
+		};
+		9EEA37C21BEE6F60008B9799 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EEA37981BEE6F60008B9799 /* FlyWithMe */;
+			targetProxy = 9EEA37C11BEE6F60008B9799 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EEA37A81BEE6F60008B9799 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEA37A91BEE6F60008B9799 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EEA37AD1BEE6F60008B9799 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEA37AE1BEE6F60008B9799 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EEA37C71BEE6F60008B9799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EEA37C81BEE6F60008B9799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EEA37CA1BEE6F60008B9799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F96C8A48EA2D999473A5E22 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlyWithMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9EEA37CB1BEE6F60008B9799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0216821F13BB7A41698EF067 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlyWithMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9EEA37CD1BEE6F60008B9799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlyWithMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlyWithMe.app/FlyWithMe";
+			};
+			name = Debug;
+		};
+		9EEA37CE1BEE6F60008B9799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlyWithMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlyWithMe.app/FlyWithMe";
+			};
+			name = Release;
+		};
+		9EEA37D01BEE6F60008B9799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlyWithMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlyWithMe;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9EEA37D11BEE6F60008B9799 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlyWithMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HW.FlyWithMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlyWithMe;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEA37941BEE6F60008B9799 /* Build configuration list for PBXProject "FlyWithMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA37C71BEE6F60008B9799 /* Debug */,
+				9EEA37C81BEE6F60008B9799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEA37C91BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA37CA1BEE6F60008B9799 /* Debug */,
+				9EEA37CB1BEE6F60008B9799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEA37CC1BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA37CD1BEE6F60008B9799 /* Debug */,
+				9EEA37CE1BEE6F60008B9799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEA37CF1BEE6F60008B9799 /* Build configuration list for PBXNativeTarget "FlyWithMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEA37D01BEE6F60008B9799 /* Debug */,
+				9EEA37D11BEE6F60008B9799 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EEA37911BEE6F60008B9799 /* Project object */;
+}
